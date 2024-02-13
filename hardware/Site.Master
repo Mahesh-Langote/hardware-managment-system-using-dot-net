@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="hardware.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a runat="server" href="~/">Hardeware</a>
+            </div>
+            <ul>
+
+                <li><a runat="server" href="~/">Home</a></li>
+                <li><a runat="server" href="~/about">About</a></li>
+                <li><a runat="server" href="~/product">Products</a></li>
+                <li><a runat="server" href="~/contact">Contact</a></li>
+                <li><a runat="server" href="~/feedback">Feedback</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <br />
+    <br />
+    <br />
+
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <footer>
+        <div class="footer">
+            <p class="copyright">Copyright &copy; 2024 - Priti</p>
+        </div>
+    </footer>
+
+</body>
+</html>
